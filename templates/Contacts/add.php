@@ -8,3 +8,4 @@
     echo $this->Form->button(__('Criar contato'));
     echo $this->Form->end();
 ?>
+<?= $this->element('mask') ?>
