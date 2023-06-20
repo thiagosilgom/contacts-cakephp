@@ -2,4 +2,4 @@
 <?= $this->Html->link('Voltar', ['action' => 'index']) ?>
 <p><strong>Telefone:</strong> <?= h($contact->phone) ?></p>
 <p><strong>E-mail:</strong> <?= h($contact->email) ?></p>
-<p><small>Data: <?= date('d/m/Y H:i', strtotime($contact->created)) ?></small></p>
+<p><small>Data: <?= $contact->created->format('d/m/Y') ?></small></p>

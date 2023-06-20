@@ -23,7 +23,7 @@
             <?= h($contact->email) ?>
         </td>
         <td>
-            <?= date('d/m/Y H:i', strtotime($contact->created)) ?>
+            <?= $contact->created->format('d/m/Y') ?>
         </td>
         <td>
             <?= $this->Html->link('Editar', ['action' => 'edit', $contact->id]) ?>
