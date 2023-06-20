@@ -17,7 +17,8 @@ class ContactsTable extends Table
         $validator
             ->notEmpty('name')
             ->notEmpty('phone')
-            ->notEmpty('email');
+            ->notEmpty('email')
+            ->email('email');
 
         return $validator;
     }

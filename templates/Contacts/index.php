@@ -7,7 +7,7 @@
         <th>Telefone</th>
         <th>E-mail</th>
         <th>Data</th>
-        <th>Ações</th>
+        <th colspan="2">Ações</th>
     </tr>
 
     <?php foreach ($contacts as $contact): ?>
@@ -27,6 +27,8 @@
         </td>
         <td>
             <?= $this->Html->link('Editar', ['action' => 'edit', $contact->id]) ?>
+        </td>
+        <td>
             <?= $this->Form->postLink(
                 'Deletar',
                 ['action' => 'delete', $contact->id],
