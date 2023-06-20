@@ -15,9 +15,9 @@ class ContactsTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
-            ->notEmpty('name')
-            ->notEmpty('phone')
-            ->notEmpty('email')
+            ->notEmptyString('name')
+            ->notEmptyString('phone')
+            ->notEmptyString('email')
             ->email('email');
 
         return $validator;
